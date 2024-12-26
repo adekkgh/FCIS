@@ -1,0 +1,45 @@
+@import "reset.css";
+@import "typography";
+
+body.overflow {
+  overflow: hidden;
+}
+
+body.grabbing * {
+  cursor: grabbing;
+}
+
+.layout-wrapper {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px 48px 24px 96px;
+}
+
+.required:after {
+  content: " *";
+  //color: $geraldine;
+}
+
+.dark-y-scroll {
+  overflow-y: auto;
+  padding-right: 14px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    //background: #{$light-dune};
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    //background: #{$concord};
+    border-radius: 2px;
+  }
+  @supports (-moz-appearance:none) {
+    //scrollbar-color: #{$concord} #{$light-dune};
+  }
+}
