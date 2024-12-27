@@ -1,9 +1,9 @@
 <script lang="ts">
-
-import Header from '$lib/components/header/Header.svelte';
+	import './layout.scss';
+	import Header from '$lib/components/header/Header.svelte';
 </script>
 
 <Header />
-<div class="">
+<div class="main-layout">
 	<slot />
 </div>
